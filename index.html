@@ -5,56 +5,77 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>أتوبيس الصحاب - v64 - تحميل</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:system-ui;background:#fff8ec;color:#241a12;padding:16px}
-.card{background:#fff;border:2px solid #f0e0c8;border-radius:16px;padding:16px;margin:12px auto;max-width:520px;box-shadow:0 4px 20px #00000011}
-h1{font-size:32px;margin:8px 0}h2{font-size:20px;margin:10px 0 6px}
-.btn{display:block;text-align:center;padding:14px;border-radius:12px;font-weight:900;text-decoration:none;margin:8px 0;font-size:17px}
-.btn-green{background:#2ecc71;color:#fff}.btn-blue{background:#0b5cff;color:#fff}.btn-white{background:#fff;border:2px solid #ddd;color:#333}
-.small{font-size:13px;color:#666}.badge{background:#e23b2e;color:#fff;border-radius:999px;padding:2px 8px;font-size:12px}
-.feature{background:#eafff0;border:2px solid #2ecc71;border-radius:12px;padding:10px;margin:6px 0;font-weight:700}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui;background:#fff8ec;color:#241a12;padding:16px}
+.card{background:#fff;border:2px solid #f0e0c8;border-radius:16px;padding:16px;margin:12px auto;max-width:520px}
+.btn{display:block;text-align:center;padding:16px;border-radius:12px;font-weight:900;text-decoration:none;margin:10px 0;font-size:18px;line-height:1.4}
+.btn-apk{background:#2ecc71;color:#fff;font-size:20px;box-shadow:0 4px 0 #1e9e54}
+.btn-online{background:#0b5cff;color:#fff}
+.small{font-size:13px;color:#666;text-align:center}
+.feature{background:#eafff0;border:2px solid #2ecc71;border-radius:12px;padding:10px;margin:6px 0;font-weight:700;line-height:1.6}
+.warn{background:#fff3cd;border:2px solid #ffc23d;border-radius:12px;padding:10px;margin:6px 0;font-weight:700;line-height:1.8}
+h1{margin:0;font-size:28px}
+h2{margin:0 0 10px;font-size:20px}
+h3{margin:0 0 8px}
 </style>
 </head>
 <body>
+
 <div class="card" style="text-align:center;background:linear-gradient(135deg,#ff8a00,#ff5a3c);color:#fff;border:none">
 <h1>🚌 أتوبيس الصحاب</h1>
-<p>العب أونلاين مع صحابك • v64 🆕</p>
+<p style="margin:8px 0 0">العب أونلاين مع صحابك • v64 🆕</p>
 <p class="small" style="color:#ffe8d5">من صنع Hesham Etsh 👑</p>
 </div>
 
 <div class="card">
 <h2>🆕 جديد في v64</h2>
-<div class="feature">✏️ اسم الروم - اكتب اسم رومك بنفسك</div>
-<div class="feature">👥 نظام أصدقاء - طلب صداقة + شات خاص + 🟢 أونلاين + دعوة لروم</div>
-<div class="feature">📢 الشات العام - المالك بس يبعت والكل يستقبل + إشعار للي قافل التطبيق</div>
-<div class="feature">🎮 ألعاب أخرى - السلم والثعبان 🐍 أونلاين (2-4 لاعبين) + سولو ضد بوت</div>
-<div class="feature">💬 شات في صفحة المراجعة</div>
-<div class="feature">🎨 ملصقات جديدة بإفيهات مصرية - مختلفة عن لوحة المفاتيح</div>
-<div class="feature">🟢 حرف الجولة باللون الأخضر عشان يبقى واضح</div>
-<div class="feature">👥 عداد الروم لحظي لكل اللاعبين</div>
 <div class="feature">📩 طلب الانضمام ميتغلش لما تروح الرئيسية أو المتجر</div>
 <div class="feature">📚 القاموس اتصحح بالكامل + طعام / مهنة / مشهور</div>
 <div class="feature">🚌 رسالة السيرفر زحمة + تنبيه الخروج التلقائي من الروم</div>
 <div class="feature">👑 كلمة مالك اللعبة للمالك بس - والهوست يظهر هوست الروم</div>
+<div class="feature">✅ تصليح الـ APK - كان بيقف على "بيحمّل" - دلوقتي بيفتح فوراً</div>
+<div class="feature">🎲 تصليح السلم والثعبان - الحركة بقت زي الصورة بالظبط: 50 → 51 → 60 → 61</div>
+<div class="feature">🎨 الملصقات الجديدة بكلام بس - بالشرا من المتجر - القديم اتشال</div>
 </div>
 
+<!-- العب دلوقتي -->
 <div class="card" style="text-align:center">
 <h2>▶️ العب دلوقتي</h2>
-<a class="btn btn-green" href="play.html">▶️ العب أونلاين - v64</a>
+
+<!-- 1 - زرار التحميل الأول -->
+<a class="btn btn-apk" id="btnDownloadApk" href="autobus.apk" download>⬇️ حمّل التطبيق APK - v64</a>
+<p class="small" style="margin:-4px 0 10px">حمّل وثبّت على موبايلك - أندرويد 📱</p>
+<div id="dlMsg" style="display:none;background:#eafff0;border:2px solid #2ecc71;border-radius:12px;padding:10px;font-weight:700;margin:0 0 10px">بيحمّل دلوقتي... لو مبدأش، دوس على زرار التحميل تاني ⬇️</div>
+
+<!-- 2 - زرار الأونلاين التاني -->
+<a class="btn btn-online" href="play.html">▶️ العب أونلاين - v64</a>
 <p class="small">هتفتح اللعبة على طول - لازم نت 📶</p>
-<h2 style="margin-top:16px">📱 حمّل التطبيق (أندرويد)</h2>
-<p class="small">لو عندك APK - دوس تحميل وثبّته. لو مفيش APK لسه، العب أونلاين من الزرار اللي فوق.</p>
-<a class="btn btn-blue" href="play.html" download>📥 تحميل - العب من المتصفح</a>
-<p class="small">النسخة الحالية: <b>v64</b> • آخر تحديث: 27 نوفمبر 2026</p>
+
+<p class="small" style="margin-top:10px">النسخة الحالية: <b>v64</b> • آخر تحديث: 27 نوفمبر 2026</p>
 </div>
 
 <div class="card">
-<h2>📧 عندك مشكلة؟ كلّم المالك</h2>
-<p class="small">لو قابلتك أي مشكلة - شحن، روم، حساب - ابعتلي على الإيميل ده:</p>
-<a class="btn btn-blue" href="mailto:hshambdaltwab364@gmail.com">📧 hshambdaltwab364@gmail.com</a>
+<h2>📱 ازاي تثبّت الـ APK؟</h2>
+<div class="warn">
+1. دوس على زرار <b>حمّل التطبيق APK</b> اللي فوق<br>
+2. افتح الملف اللي اتحمّل<br>
+3. لو طلب "السماح بالتثبيت من مصادر غير معروفة" دوس سماح<br>
+4. دوس تثبيت، وبعدين افتح اللعبة
+</div>
 </div>
 
 <div class="card" style="text-align:center">
-<p class="small">🚌 أتوبيس الصحاب © 2026 - من صنع Hesham Etsh<br>📱 التطبيق مخصص للأندرويد • 🆔 مالك اللعبة: 860328</p>
+<h2>📧 عندك مشكلة؟ كلّم المالك</h2>
+<p class="small">لو قابلتك أي مشكلة - شحن، روم، حساب - ابعتلي:</p>
+<a class="btn btn-online" href="mailto:hshambdaltwab364@gmail.com">📧 hshambdaltwab364@gmail.com</a>
 </div>
+
+<script>
+// رسالة جوه الصفحة بدل ما يروح لصفحة تانية - زي ما انت بتحب
+document.getElementById("btnDownloadApk").addEventListener("click", function(){
+  var m = document.getElementById("dlMsg");
+  if(m) m.style.display = "block";
+});
+</script>
 </body>
 </html>
